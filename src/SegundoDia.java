@@ -6,7 +6,6 @@ public class SegundoDia {
 
         // Entrada das notas do ENEM
         double redacao = 920.00;
-
         double natureza = 639.80;
         double humanas = 701.90;
         double linguagens = 635.40;

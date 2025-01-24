@@ -1,6 +1,7 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
-public class PrimeiroDia {
+public class TerceiroDia {
     public static void main(String[] args) {
 
         // Entrada das notas do ENEM
@@ -23,7 +24,6 @@ public class PrimeiroDia {
         universidades.put("UFBA VITORIA DA CONQUISTA", new double[]{3,4,3,3,2});
         universidades.put("UFBA SALVADOR", new double[]{3,4,3,3,2});
         universidades.put("UFRB RECONCAVO BAIANO", new double[]{1,1,1,1,1});
-
         universidades.put("UFSB", new double[]{5,5,2,3,4});
         universidades.put("UNIVASF - BA", new double[]{1,1,1,1,1});
         universidades.put("UNIVASF - PE", new double[]{1,1,1,1,1});
@@ -95,84 +95,83 @@ public class PrimeiroDia {
         universidades.put("UFT PALMAS", new double[]{3,4,2,3,2});
 
         universidadesNotasCortePCD.put("UFAL MACEIO", 736.52);
-        universidadesNotasCortePCD.put("UFAL ARAPIRACA", 731.02);
-        universidadesNotasCortePCD.put("UFAM AMAZONAS ",739.30);
-        universidadesNotasCortePCD.put("UFERSA MOSSORO", 715.12);
-        universidadesNotasCortePCD.put("UFOB BARREIRAS", 748.10);
-        universidadesNotasCortePCD.put("UESC ILHEUS", 715.13);
-        universidadesNotasCortePCD.put("UFBA VITORIA DA CONQUISTA", 728.72);
-        universidadesNotasCortePCD.put("UFBA SALVADOR", 720.72);
+        universidadesNotasCortePCD.put("UFAL ARAPIRACA", 734.96);
+        universidadesNotasCortePCD.put("UFAM AMAZONAS ",748.04);
+        universidadesNotasCortePCD.put("UFERSA MOSSORO", 721.80);
+        universidadesNotasCortePCD.put("UFOB BARREIRAS", 736.84);
+        universidadesNotasCortePCD.put("UESC ILHEUS", 731.95);
+        universidadesNotasCortePCD.put("UFBA VITORIA DA CONQUISTA", 737.80);
+        universidadesNotasCortePCD.put("UFBA SALVADOR", 725.70);
         universidadesNotasCortePCD.put("UFRB RECONCAVO BAIANO", 713.78);
-
-        universidadesNotasCortePCD.put("UFSB", 714.75);
+        universidadesNotasCortePCD.put("UFSB", 738.39);
         universidadesNotasCortePCD.put("UNIVASF - BA", 733.74);
         universidadesNotasCortePCD.put("UNIVASF - PE", 736.02);
         universidadesNotasCortePCD.put("UFCA CARIRI", 740.08);
-        universidadesNotasCortePCD.put("UNILAB CE", 741.98);
+        universidadesNotasCortePCD.put("UNILAB CE", 736.44);
         universidadesNotasCortePCD.put("UFC SOBRAL", 749.90);
-        universidadesNotasCortePCD.put("UFC FORTALEZA", 755.40);
-        universidadesNotasCortePCD.put("UFES ESPIRITO SANTO", 769.91);
-        universidadesNotasCortePCD.put("UFCAT GO", 735.01);
-        universidadesNotasCortePCD.put("UFG GOIANIA", 740.73);
-        universidadesNotasCortePCD.put("UFJ JATAI", 703.89);
+        universidadesNotasCortePCD.put("UFC FORTALEZA", 753.10);
+        universidadesNotasCortePCD.put("UFES ESPIRITO SANTO", 772.05);
+        universidadesNotasCortePCD.put("UFCAT GO", 725.05);
+        universidadesNotasCortePCD.put("UFG GOIANIA", 726.72);
+        universidadesNotasCortePCD.put("UFJ JATAI", 735.01);
         universidadesNotasCortePCD.put("UFMA SAO LUIS", 733.56);
-        universidadesNotasCortePCD.put("UFMA IMPERATRIZ", 723.90);
+        universidadesNotasCortePCD.put("UFMA IMPERATRIZ", 732.16);
         universidadesNotasCortePCD.put("UFMA PNHEIRO", 723.50);
-        universidadesNotasCortePCD.put("UNIFAL ALFENAS", 751.85);
+        universidadesNotasCortePCD.put("UNIFAL ALFENAS", 733.40);
         universidadesNotasCortePCD.put("UFMG BH", 753.48);
-        universidadesNotasCortePCD.put("UFVJM DIAMANTINA",737.14);
+        universidadesNotasCortePCD.put("UFVJM DIAMANTINA",749.96);
         universidadesNotasCortePCD.put("UFVJM TEOFILO OTONI", 746.24);
-        universidadesNotasCortePCD.put("UFSJ DIVINOPOLIS", 717.05);
-        universidadesNotasCortePCD.put("UFSJ SAO JOAO DEL REI", 727.10);
-        universidadesNotasCortePCD.put("UFJF JUIZ DE FORA", 745.08);
-        universidadesNotasCortePCD.put("UFJF", 740.30);
-        universidadesNotasCortePCD.put("UFLA LAVRAS", 749.34);
+        universidadesNotasCortePCD.put("UFSJ DIVINOPOLIS", 734.40);
+        universidadesNotasCortePCD.put("UFSJ SAO JOAO DEL REI", 746.64);
+        universidadesNotasCortePCD.put("UFJF JUIZ DE FORA", 743.02);
+        universidadesNotasCortePCD.put("UFJF", 737.92);
+        universidadesNotasCortePCD.put("UFLA LAVRAS", 758.86);
         universidadesNotasCortePCD.put("UFOP OURO PRETO", 755.60);
-        universidadesNotasCortePCD.put("UFTM TRIANGULO MINEIRO", 740.18);
-        universidadesNotasCortePCD.put("UFU UBERABA", 721.62);
-        universidadesNotasCortePCD.put("UFV VIÇOSA", 752.02);
-        universidadesNotasCortePCD.put("UEMS", 807.82);
+        universidadesNotasCortePCD.put("UFTM TRIANGULO MINEIRO", 752.78);
+        universidadesNotasCortePCD.put("UFU UBERABA", 699.47);
+        universidadesNotasCortePCD.put("UFV VIÇOSA", 729.38);
+        universidadesNotasCortePCD.put("UEMS", 803.07);
         universidadesNotasCortePCD.put("UFMS CAMPO GRANDE", 734.26);
-        universidadesNotasCortePCD.put("UFMS TRES LAGOAS", 723.10);
-        universidadesNotasCortePCD.put("UFGD DOURADOS", 757.32);
-        universidadesNotasCortePCD.put("UNEMAT", 710.11);
-        universidadesNotasCortePCD.put("UFMT CUIABA", 727.12);
-        universidadesNotasCortePCD.put("UFMT SINOP", 697.42);
-        universidadesNotasCortePCD.put("UFCG CAMPINA GRANDE", 721.76);
-        universidadesNotasCortePCD.put("UFCG CAJAZEIRAS", 710.80);
-        universidadesNotasCortePCD.put("UFPB JOAO PESSOA", 737.16);
+        universidadesNotasCortePCD.put("UFMS TRES LAGOAS", 727.49);
+        universidadesNotasCortePCD.put("UFGD DOURADOS", 727.00);
+        universidadesNotasCortePCD.put("UNEMAT", 715.35);
+        universidadesNotasCortePCD.put("UFMT CUIABA", 730.66);
+        universidadesNotasCortePCD.put("UFMT SINOP", 722.24);
+        universidadesNotasCortePCD.put("UFCG CAMPINA GRANDE", 723.68);
+        universidadesNotasCortePCD.put("UFCG CAJAZEIRAS", 725.78);
+        universidadesNotasCortePCD.put("UFPB JOAO PESSOA", 747.20);
         universidadesNotasCortePCD.put("UFPE RECIFE",756.38);
-        universidadesNotasCortePCD.put("UFPE CARUARU", 732.39);
-        universidadesNotasCortePCD.put("UFDPAR PARNAIBA", 700.56);
-        universidadesNotasCortePCD.put("UFPI PICOS", 722.72);
-        universidadesNotasCortePCD.put("UFPI TERESINA", 716.35);
-        universidadesNotasCortePCD.put("UFPR TOLEDO", 731.96);
+        universidadesNotasCortePCD.put("UFPE CARUARU", 732.56);
+        universidadesNotasCortePCD.put("UFDPAR PARNAIBA", 700.93);
+        universidadesNotasCortePCD.put("UFPI PICOS", 760.76);
+        universidadesNotasCortePCD.put("UFPI TERESINA", 723.39);
+        universidadesNotasCortePCD.put("UFPR TOLEDO", 723.39);
         universidadesNotasCortePCD.put("UFPR CURITIBA", 771.52);
-        universidadesNotasCortePCD.put("UNILA FOZ DO IGUACU", 751.00);
-        universidadesNotasCortePCD.put("UFRJ RIO DE JANEIRO", 773.22);
-        universidadesNotasCortePCD.put("UFRJ MACAÉ", 760.76);
+        universidadesNotasCortePCD.put("UNILA FOZ DO IGUACU", 718.68);
+        universidadesNotasCortePCD.put("UFRJ RIO DE JANEIRO", 766.70);
+        universidadesNotasCortePCD.put("UFRJ MACAÉ", 775.22);
         universidadesNotasCortePCD.put("UFF NITEROI", 758.53);
         universidadesNotasCortePCD.put("UNIRIO", 747.78);
         universidadesNotasCortePCD.put("UFRN NATAL", 738.71);
-        universidadesNotasCortePCD.put("UFRN CAICÓ", 716.94);
-        universidadesNotasCortePCD.put("UERN MOSSORO", 765.16);
-        universidadesNotasCortePCD.put("UFRR", 738.67);
-        universidadesNotasCortePCD.put("UFPEL PELOTAS", 740.02);
-        universidadesNotasCortePCD.put("UFCSPA PORTO ALEGRE", 748.54);
-        universidadesNotasCortePCD.put("UFFS RS", 703.40);
+        universidadesNotasCortePCD.put("UFRN CAICÓ", 725.53);
+        universidadesNotasCortePCD.put("UERN MOSSORO", 777.60);
+        universidadesNotasCortePCD.put("UFRR", 728.86);
+        universidadesNotasCortePCD.put("UFPEL PELOTAS", 740.24);
+        universidadesNotasCortePCD.put("UFCSPA PORTO ALEGRE", 752.52);
+        universidadesNotasCortePCD.put("UFFS RS", 730.96);
         universidadesNotasCortePCD.put("UFFS CHAPECÓ",733.86);
-        universidadesNotasCortePCD.put("UFRGS PORTO ALEGRE", 737.16);
-        universidadesNotasCortePCD.put("FURG", 736.43);
-        universidadesNotasCortePCD.put("UFSM SANTA MARIA", 726.26);
-        universidadesNotasCortePCD.put("UNIPAMPA", 727.04);
+        universidadesNotasCortePCD.put("UFRGS PORTO ALEGRE", 745.23);
+        universidadesNotasCortePCD.put("FURG", 750.76);
+        universidadesNotasCortePCD.put("UFSM SANTA MARIA", 728.78);
+        universidadesNotasCortePCD.put("UNIPAMPA", 720.90);
         universidadesNotasCortePCD.put("UFSC ARARANGUÁ",764.98);
-        universidadesNotasCortePCD.put("UFSC CURITIBANOS", 0.0);
-        universidadesNotasCortePCD.put("UFSC FLORIANOPOLIS", 773.44);
+        universidadesNotasCortePCD.put("UFSC CURITIBANOS", 740.09);
+        universidadesNotasCortePCD.put("UFSC FLORIANOPOLIS", 757.04);
         universidadesNotasCortePCD.put("UFS LAGARTO SE", 715.57);
         universidadesNotasCortePCD.put("UFS ARACAJU",728.16);
         universidadesNotasCortePCD.put("UFSCAR SAAO CARLOS SP", 755.88);
-        universidadesNotasCortePCD.put("UFNT ARAGUAINA",710.29);
-        universidadesNotasCortePCD.put("UFT PALMAS", 720.38);
+        universidadesNotasCortePCD.put("UFNT ARAGUAINA",720.38);
+        universidadesNotasCortePCD.put("UFT PALMAS", 729.80);
 
         // Calculando as médias ponderadas
         for (Map.Entry<String, double[]> entry : universidades.entrySet()) {
